@@ -10,7 +10,9 @@
 
 #include <cstdio>
 
+#if ENGINE_MAJOR_VERSION < 5 || ENGINE_MAJOR_VERSION >= 5 && ENGINE_MINOR_VERSION < 2
 #include "IScriptGeneratorPluginInterface.h"
+#endif
 #include "Modules/ModuleManager.h"
 #include "CoreMinimal.h"
 
